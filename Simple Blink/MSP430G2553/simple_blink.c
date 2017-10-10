@@ -1,6 +1,9 @@
-//Demo app to blink the red LED (LED1) on the TI Launchpad
-//which is attached to P1.0
-//The green LED(LED2) is connected to P1.6
+/*
+ * Mitchell Hay
+ * RU09342
+ * Lab 2 Simple Blink
+ * MSP430G2553
+
 
 #include <msp430g2553.h>
 
@@ -22,3 +25,5 @@ int main(void) {
     for (i = 0; i < 0x6000; i++);
   }
 }
+
+*/
