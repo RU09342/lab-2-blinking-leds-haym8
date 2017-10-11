@@ -1,1 +1,0 @@
-"./button_blink.obj" "./button_interrupt.obj" "./extra_work_simple_blink.obj" "./multiple_blink.obj" "./simple_blink.obj" "./software_pwm.obj" "./timer_a_blink.obj" "../lnk_msp430f5529.cmd" -llibmath.a -llibc.a 

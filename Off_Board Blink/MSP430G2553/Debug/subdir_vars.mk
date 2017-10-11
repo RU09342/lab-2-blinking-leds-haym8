@@ -12,6 +12,7 @@ C_SRCS += \
 ../button_interrupt.c \
 ../extra_work_button_blink.c \
 ../extra_work_simple_blink.c \
+../main.c \
 ../multiple_blink.c \
 ../offboard_blink.c \
 ../simple_blink.c \
@@ -24,6 +25,7 @@ OBJS += \
 ./button_interrupt.obj \
 ./extra_work_button_blink.obj \
 ./extra_work_simple_blink.obj \
+./main.obj \
 ./multiple_blink.obj \
 ./offboard_blink.obj \
 ./simple_blink.obj \
@@ -36,6 +38,7 @@ C_DEPS += \
 ./button_interrupt.d \
 ./extra_work_button_blink.d \
 ./extra_work_simple_blink.d \
+./main.d \
 ./multiple_blink.d \
 ./offboard_blink.d \
 ./simple_blink.d \
@@ -48,6 +51,7 @@ C_DEPS__QUOTED += \
 "button_interrupt.d" \
 "extra_work_button_blink.d" \
 "extra_work_simple_blink.d" \
+"main.d" \
 "multiple_blink.d" \
 "offboard_blink.d" \
 "simple_blink.d" \
@@ -60,6 +64,7 @@ OBJS__QUOTED += \
 "button_interrupt.obj" \
 "extra_work_button_blink.obj" \
 "extra_work_simple_blink.obj" \
+"main.obj" \
 "multiple_blink.obj" \
 "offboard_blink.obj" \
 "simple_blink.obj" \
@@ -72,6 +77,7 @@ C_SRCS__QUOTED += \
 "../button_interrupt.c" \
 "../extra_work_button_blink.c" \
 "../extra_work_simple_blink.c" \
+"../main.c" \
 "../multiple_blink.c" \
 "../offboard_blink.c" \
 "../simple_blink.c" \

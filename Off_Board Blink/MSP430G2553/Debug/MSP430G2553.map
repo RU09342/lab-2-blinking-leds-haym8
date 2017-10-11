@@ -1,7 +1,7 @@
 ******************************************************************************
                   MSP430 Linker PC v15.12.3                    
 ******************************************************************************
->> Linked Tue Oct 10 22:02:15 2017
+>> Linked Wed Oct 11 13:40:11 2017
 
 OUTPUT FILE NAME:   <MSP430G2553.out>
 ENTRY POINT SYMBOL: "_c_int00_noinit_noargs_noexit"  address: 0000c02e
@@ -49,7 +49,7 @@ section   page    origin      length       input sections
                   000003b2    0000004e     --HOLE--
 
 .text      0    0000c000    00000052     
-                  0000c000    0000002e     offboard_blink.obj (.text:main)
+                  0000c000    0000002e     main.obj (.text:main)
                   0000c02e    00000012     rts430_eabi.lib : boot_special.obj (.text:_c_int00_noinit_noargs_noexit)
                   0000c040    00000008                     : isr_trap.obj (.text:_isr:__TI_ISR_TRAP)
                   0000c048    00000006                     : exit.obj (.text:abort)
@@ -116,38 +116,38 @@ NMI        0    0000fffc    00000002
 
 MODULE SUMMARY
 
-       Module               code   ro data   rw data
-       ------               ----   -------   -------
+       Module             code   ro data   rw data
+       ------             ----   -------   -------
     .\
-       offboard_blink.obj   46     0         0      
-    +--+--------------------+------+---------+---------+
-       Total:               46     0         0      
-                                                    
+       main.obj           46     0         0      
+    +--+------------------+------+---------+---------+
+       Total:             46     0         0      
+                                                  
     C:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\rts430_eabi.lib
-       boot_special.obj     18     0         0      
-       isr_trap.obj         8      0         0      
-       exit.obj             6      0         0      
-       pre_init.obj         4      0         0      
-       boot.obj             0      2         0      
-       int00.obj            0      2         0      
-       int02.obj            0      2         0      
-       int03.obj            0      2         0      
-       int05.obj            0      2         0      
-       int06.obj            0      2         0      
-       int07.obj            0      2         0      
-       int08.obj            0      2         0      
-       int09.obj            0      2         0      
-       int10.obj            0      2         0      
-       int11.obj            0      2         0      
-       int12.obj            0      2         0      
-       int13.obj            0      2         0      
-       int14.obj            0      2         0      
-    +--+--------------------+------+---------+---------+
-       Total:               36     28        0      
-                                                    
-       Stack:               0      0         80     
-    +--+--------------------+------+---------+---------+
-       Grand Total:         82     28        80     
+       boot_special.obj   18     0         0      
+       isr_trap.obj       8      0         0      
+       exit.obj           6      0         0      
+       pre_init.obj       4      0         0      
+       boot.obj           0      2         0      
+       int00.obj          0      2         0      
+       int02.obj          0      2         0      
+       int03.obj          0      2         0      
+       int05.obj          0      2         0      
+       int06.obj          0      2         0      
+       int07.obj          0      2         0      
+       int08.obj          0      2         0      
+       int09.obj          0      2         0      
+       int10.obj          0      2         0      
+       int11.obj          0      2         0      
+       int12.obj          0      2         0      
+       int13.obj          0      2         0      
+       int14.obj          0      2         0      
+    +--+------------------+------+---------+---------+
+       Total:             36     28        0      
+                                                  
+       Stack:             0      0         80     
+    +--+------------------+------+---------+---------+
+       Grand Total:       82     28        80     
 
 
 GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
