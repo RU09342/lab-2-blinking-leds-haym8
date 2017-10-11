@@ -1,7 +1,7 @@
 /*
  * Mitchell Hay
  * RU09342
- * Lab 2 - Simple Blink
+ * Lab 2 Simple Blink Extra Work
  * MSP430F5529
  */
 //******************************************************
