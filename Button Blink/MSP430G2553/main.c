@@ -1,11 +1,11 @@
 /*
  * Mitchell Hay
  * RU09342
- * Lab 2 Simple Blink
+ * Lab 2 Button Blink
  * MSP430G2553
  */
 
-#include  <msp430g2553.h> // For the M430G2553 chip,
+#include  <msp430g2553.h> 
 
 void main(void) {
 	// Watchdog setup
@@ -30,7 +30,7 @@ void main(void) {
 			// Turn off LED
 			P1OUT &= ~BIT0;
 		}
-		// Turn on LED
+		// Turn on LED otherwise
 		P1OUT |= BIT0;               // Enable RED LED
 	}
 }
