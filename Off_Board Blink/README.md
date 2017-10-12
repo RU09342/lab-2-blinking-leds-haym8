@@ -24,7 +24,8 @@ There are five pins on the G2553 chip that need to be connected:
  * LED Pin
  * Test
  * Reset
- \The breakout board can still be used to power the G2553 chip, so all pins on the board should be connected to the corresponding pins on the chip.
+
+The breakout board can still be used to power the G2553 chip, so all pins on the board should be connected to the corresponding pins on the chip.
 
 # Functionality
 ## Usage
