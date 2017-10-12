@@ -36,7 +36,7 @@ int main(void) {
 			i = 0;
 		}
 		
-		// Toggle LED 4.7 on or off at slower rate
+		// Toggle LED 4.7 on or off, slower rate
 		if (j >= 20000)
 		{
 			P4OUT ^= BIT7;
