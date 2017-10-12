@@ -1,3 +1,5 @@
+## Mitchell Hay
+
 # Simple Blink
 This project takes an onboard LED and blinks it at a set rate. The duty cycle of the blinking LED was 50%, meaning it was on for as much time as it was off. The blinking was done by using a counter in a while loop, toggling the LED whenever a certain value was reached. Although using timers would make the most sense, counting in a loop would be sufficient for this portion of the lab.
 
