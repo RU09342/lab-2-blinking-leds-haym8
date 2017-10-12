@@ -1,8 +1,8 @@
 /*
  * Mitchell Hay
  * RU09342
- * Lab 2 Simple Blink
- * MSP430FR6989
+ * Lab 2 Button Blink
+ * MSP430FR2311
  */
 
 #include  <msp430.h>
@@ -14,8 +14,7 @@ void main(void)
 
 	// Disable the GPIO power-on default high-impedance mode
 	PM5CTL0 &= ~LOCKLPM5;
-
-
+	
 	// Set LED as output
 	P1DIR |= BIT0;
 
@@ -23,7 +22,7 @@ void main(void)
 	// Set Button as input
 	P1DIR &= ~BIT1;
 
-	// Set pull up resistor as output to Pin 2.1
+	// Set pull up resistor as output to Pin 1.1 (Button)
 	P1OUT |= BIT1;
 
 	// Enable pull up resistor
@@ -37,7 +36,7 @@ void main(void)
 	    	// Turn off LED
 	        P1OUT &= ~BIT0;
 	    }
-	    // Turn on LED
+	    // Turn on LED otherwise
 	    P1OUT |= BIT0;               // Enable RED LED
 	}
 }
