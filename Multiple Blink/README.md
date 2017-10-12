@@ -1,25 +1,26 @@
 # Multiple Blink
-Now that we have blinked at least 1 LED, what about blinking multiple LEDS at the same time? The minimum that you need to develop is blinking at least two LEDs at two different rates. Although I am not going to give you a speed, you should probably pick a rate which is visible to a standard human. I really hope that you take this further and perform some of the extra work for this part of the lab exercise.
+After blinking one LED, the next step was to implement two LEDs blinking at the same time, at different rates. This would be done slightly differently than the first part of the lab, as a second counter would be needed. Instead of using nested loops to delay, the program now will remain running and continually polling the values of the two counters. Each LED will get toggled when the counters hit their respective compare values. Once this happens, the counter value is reset and the process is repeated. Having the counters go up to different values ensured that LEDs would blink at different rates.
 
-
-# YOU NEED TO CREATE THE FOLLOWING FOLDERS
-* MSP430G2553
+# Devices
 * MSP430F5529
 * MSP430FR2311
 * MSP430FR5994
 * MSP430FR6989
+* MSP430G2553
 
-## README
-Remember to replace this README with your README once you are ready to submit. I would recommend either making a copy of this file or taking a screen shot. There might be a copy of all of these README's in a folder on the top level depending on the exercise.
+# Getting Started
+## Dependencies
+Each device requires no outside dependencies. Everything needed to run the program is included in the folder. Each folder is labeled with the device it is meant for.
+## Setup
+Each of the device projects in this part of the lab can be imported into Code Composer Studio and run from there. To import it, open CCS and select File -> Import -> Code Composer Studio -> CCS Project and select the desired directory.
 
-## Extra Work
-When you take a look at the development boards, you are limited to what is built into the platform.
+# Functionality
+## Usage
+There is nothing that needs to be done by the user once the program is loaded onto the device. There will be two LEDs blinking at constant rates. Nothing can be done by the user to change these rates.
 
-### Even More LEDs
-Since up to this point you should have hopefully noticed that you are simply just controlling each pin on your processor. So... what is keeping you from putting an LED on each pin? Can you actually control the speed of each of these LEDs?
+# Known Errors
+Although it is not the case in this project, a possible error that could arise is setting a compare value too high
 
-### Patterned Lights
-If you can control a ton of LEDs, what is keeping you from having a little fun? Why not try and make something like a moving face or other moving object in lights. *CAUTION* I would only do this if you have finished the rest of the lab.
-
-### UART Pattern Control
-If you have been using UART, could you set which LEDs are on or off based off some UART command? Would you want to send an Array over UART such as [1 0 1 0] or would you want to send a byte that corresponds to the status? Can you not only say which LEDs are on, but also tell them to blink at a particular rate if they were on (so LED1 Blink every 100ms)?
+# Tasks
+* [x] Implement more than one counter
+* [x] Blink multiple LEDs simultaneously
