@@ -27,6 +27,6 @@ importing the project into Code Composer Studio. A USB to WART cable was used al
 Connecting the USB to UART cable incorrectly to the development board will result in an error. The correct way to connect the UART cable is to connect the transmit cable of the UART cable to the receive pin of the board. Do the opposite with the receive cable, and connect the ground wire to a ground pin on the board. Do NOT connect the 5V wire to the board, as it could overload and damage it.
 
 # Tasks
-[x] Learn how MSP430 device registers work
-[x] Implement one way to delay a program
-[x] Transmit and Recieve data over UART
+* [x] Learn how MSP430 device registers work
+* [x] Implement one way to delay a program
+* [x] Transmit and Recieve data over UART
