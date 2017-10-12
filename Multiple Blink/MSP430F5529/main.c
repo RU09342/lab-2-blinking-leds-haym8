@@ -8,6 +8,7 @@
 #include <msp430.h>
 
 int main(void) {
+	// Set up counters
 	volatile int i = 0;
 	volatile int j = 0;
 
@@ -18,8 +19,8 @@ int main(void) {
 	P1DIR = BIT0;
 	P4DIR = BIT7;
 
-	// Set the red LED to on to start, stagger the blinking
-	P1OUT |= BIT0;
+	// Start both LEDs off
+	P1OUT &= ~BIT0;
 	P4OUT &= ~BIT7;
 
 	while(1)
@@ -28,14 +29,15 @@ int main(void) {
 		i++;
 		j++;
 
-		// Toggle LEDs on or off
+		// Toggle LED 1.0 on or off
 		if (i >= 10000)
 		{
 			P1OUT ^= BIT0;
 			i = 0;
 		}
-
-		if (j == 20000)
+		
+		// Toggle LED 4.7 on or off at slower rate
+		if (j >= 20000)
 		{
 			P4OUT ^= BIT7;
 			j = 0;
