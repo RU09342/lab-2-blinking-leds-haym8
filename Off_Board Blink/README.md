@@ -19,11 +19,11 @@ Each device requires no outside dependencies. Everything needed to run the progr
 Each of the device projects in this part of the lab can be imported into Code Composer Studio and run from there. To import it, open CCS and select File -> Import -> Code Composer Studio -> CCS Project and select the desired directory.
 ## Breadboard
 There are five pins on the G2553 chip that need to be connected:
-* Voltage
-* Ground
-* LED Pin
-* Test
-* Reset
+ * Voltage
+ * Ground
+ * LED Pin
+ * Test
+ * Reset
 The breakout board can still be used to power the G2553 chip, so all pins on the board should be connected to the corresponding pins on the chip.
 
 # Functionality
@@ -36,4 +36,4 @@ Be sure to connect the reset pin of the G2553 chip properly, or else there will 
 # Tasks
 * [x] Review circuit design knowledge
 * [x] Choose appropriate values for circuit elements
-* [] Implement an offboard UART connection
+* [ ] Implement an offboard UART connection
