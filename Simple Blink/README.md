@@ -16,7 +16,7 @@ Each of the device projects in this part of the lab can be imported into Code Co
 
 # Functionality
 ## Usage
-There is nothing that needs to be done by the user once the program is loaded onto the device. There will be an LED blinking at a constant rate. Nothing can be done to change this rate, although that idea is covered in a different part of the lab. 
+There is nothing that needs to be done by the user once the program is loaded onto the device. There will be an LED blinking at a constant rate. Nothing can be done to change this rate, although that idea is covered in a different lab. 
 
 ## Extra Work
 The extra work done for this part of the lab was changing the LED blink speed over a UART connection. The inputs are 's' for slow speed
