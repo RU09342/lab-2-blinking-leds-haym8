@@ -1,3 +1,10 @@
+/*
+ * Mitchell Hay
+ * RU09342
+ * Lab 2 Button Blink
+ * MSP430FR6989
+ */
+
 #include  <msp430.h>
 
 void main(void) {
@@ -14,7 +21,7 @@ void main(void) {
 	// Set Button as input
 	P1DIR &= ~BIT1;
 
-	// Set pull up resistor as output to Pin 2.1
+	// Set pull up resistor as output to Pin 1.1
 	P1OUT |= BIT1;
 
 	// Enable pull up resistor
@@ -26,7 +33,7 @@ void main(void) {
 			// Turn off LED
 			P1OUT &= ~BIT0;
 		}
-		// Turn on LED
+		// Turn on LED otherwise
 		P1OUT |= BIT0;               // Enable RED LED
 	}
 }
