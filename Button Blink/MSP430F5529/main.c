@@ -1,7 +1,7 @@
 /*
  * Mitchell Hay
  * RU09342
- * Lab 2 Simple Blink
+ * Lab 2 Button Blink
  * MSP430F5529
 */
 
@@ -27,13 +27,13 @@ void main(void)
 
 	while (1)
 	{
-		// while the button is pressed turn LED off
+		// While the button is pressed turn LED off
 	    while ((P2IN & BIT1) != BIT1)
 	    {
 	    	// Turn off LED
 	        P1OUT &= ~BIT0;
 	    }
-	    // Turn on LED
+	    // Turn on LED otherwise
 	    P1OUT |= BIT0;               // Enable RED LED
 	}
 }
