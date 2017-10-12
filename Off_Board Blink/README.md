@@ -6,10 +6,6 @@ Unlike the other four MSP430 boards, the G2553 is able to be removed from the ex
 ![Offboard Blink](Offboard_Blink_MSP430.gif)
 
 # Devices
-* MSP430F5529
-* MSP430FR2311
-* MSP430FR5994
-* MSP430FR6989
 * MSP430G2553
 
 # Getting Started
