@@ -2,7 +2,7 @@
  * Mitchell Hay
  * RU09342
  * Lab 2 Simple Blink
- * MSP430FR6989
+ * MSP430FR2311
  */
 
 #include <msp430.h>
