@@ -34,6 +34,6 @@ There is nothing that needs to be done by the user once the program is loaded on
 Be sure to connect the reset pin of the G2553 chip properly, or else there will be no output. If the breakout board is not being used, then the reset pin can be connected to a resistor in series with Vcc.
 
 # Tasks
-- [x] Review circuit design knowledge
-- [x] Choose appropriate values for circuit elements
-- [] Implement an offboard UART connection
+* [x] Review circuit design knowledge
+* [x] Choose appropriate values for circuit elements
+* [] Implement an offboard UART connection
